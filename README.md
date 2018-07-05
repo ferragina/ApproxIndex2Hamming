@@ -1,8 +1,11 @@
 # ApproxIndex2Hamming
 
    Author: Paolo Ferragina, University of Pisa, Italy
+   
    Home page: http://pages.di.unipi.it/ferragina
+   
    Copyright: MIT License
+   
    Date: July 2018
 
 
