@@ -15,7 +15,7 @@ The key idea is to partition the queryString (of length a multiple of 4) in four
 
 This allows to have longer exact matches, that should therefore reduce the false positive rate.
 
-This is a filtering approach which could be improved in time/space if you admit that the position returned by the program is "indicative of a match", so that a subsequent search phase can search for the real "match" by looking around the returned position. In this case, you can e.g. halve the space and the search time by indexing only the three (instead of six) pairs of the 4 pieces which are in positions 01, 02, 03.
+This is a filtering approach which could be improved in time/space if you admit that the position returned by the program is "indicative of a match", so that a subsequent search phase can search for the real "match" by looking around the returned position. In this case, you can e.g. halve the space and the search time by indexing only the three (instead of six) pairs of the 4 pieces which are in positions 01, 02, 03. Other ideas could consist of partitioning the queryString in more parts, but this would need to combine more of them for getting the block to search exactly, not just 2.
 
 Another optimization is that I'm loading all qgrams to be matched in one hash table, whereas you could build 6 independent hash tables, that would therefore speedup the searches.
 
