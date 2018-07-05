@@ -26,3 +26,5 @@ where the sequence of Xs is the query string of at least 12 chars and having mul
 
 The program returns the positions which match up to k-hamming distance with the searched string.
 
+The directory contains an example of "old_file.dat" and you can check the execution by searching for "pallone+brutto!a" for which the program finds four candidate exact matches which are then filtered to just one because they all refer to the same position.
+
